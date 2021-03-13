@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+/*reset*/
+a{text-decoration: none; color: inherit;}
+body{font-family: 'Nanum Gothic', sans-serif; color: #333;}
+
+#bottom{border-top: 1px solid #ccc; text-align: center;}
+#btm{width: 1200px; margin: 20px auto 0; height: 40px;}
+#btm ul li{display: inline; margin-left: 5px; font-size: 11px; cursor: pointer;}
+#bottom address{margin: 0 auto; width: 1200px; font-style: normal; color: #6a6a6a; font-size: 13px; line-height: 1.5em;}
+#bt_img{width: 1200px; margin: 30px auto 0; text-align: center;}
+#bt_img img{margin-left: 30px; margin-bottom: 10px;}
+#bt_img img:first-child{margin: 0; margin-bottom: 10px;}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'/>
+    <title>Melon</title>
+    <!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script>	
+	<![endif]-->
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/layout5.css">
+    
+    <script src="js/jquery-1.10.2.min.js"></script>
+	<script src="js/jquery.swipe.min.js"></script>
+    <script src="js/js4.js"></script> 
+    <script type="text/javascript">
+    (function($){
+        $.aniPage=function(e,type){
+            if(e.originalEvent.wheelDelta > 0 || e.originalEvent.detail < 0){
+                $("body, html").animate({
+                    scrollTop:$(window).scrollTop()-$(window).height()
+                },800,function(){
+                        $.aniOk = 0;
+                });
+            }else{
+                $("body, html").animate({
+                    scrollTop:$(window).scrollTop()+$(window).height()
+                },800,function(){
+                        $.aniOk = 0;
+                });
+            }
+        };''
+    })(jQuery);
+    $(function(){
+        $('.menu_con').height($(window).height()); // 선택자 수정
+        $.aniOk=0;
+        $(window).scrollTop(0);
+    });
+    $(document).on("mousewheel DOMMouseScroll",function(e){
+        e.preventDefault();
+        if($.aniOk == 0){
+            $.aniPage(e,e.type);
+            $.aniOk = 1;
+        }
+    });
+</script>
+</head>
+<body >
+    <div id="wrap">
+        <div id="top_wrap">
+          <nav id="mySwipe" class="swipe">
+              <ul class="swipe-wrap">
+                  <li><img src="images/Hi-Fi/image1.png" alt="Hi-Fi 이미지" class="img2"><img src="images/Hi-Fi/image_txt1.png" alt="Hi-Fi 텍스트" class="txt"></li>
+                  <li><img src="images/Hi-Fi/image2.png" alt="Hi-Fi 이미지" class="img2"><img src="images/Hi-Fi/image_txt2.png" alt="Hi-Fi 텍스트" class="txt"></li>
+                  <li><img src="images/Hi-Fi/image3.png" alt="Hi-Fi 이미지" class="img2"><img src="images/Hi-Fi/image_txt3.png" alt="Hi-Fi 텍스트" class="txt"></li>
+                  <li><img src="images/Hi-Fi/image4.png" alt="Hi-Fi 이미지" class="img2"><img src="images/Hi-Fi/image_txt4.png" alt="Hi-Fi 텍스트" class="txt"></li>
+              </ul>
+          </nav>
+           
+            <div id="left">
+                <nav id="left_menu">
+                    <ul>
+                        <li><a href="#">투데이</a></li>
+                        <li><a href="#">Hi-Fi 차트</a></li>
+                        <li><a href="#">Hi-Fi 컬렉션</a></li>
+                        <li><a href="#">멜론 Hi-Fi 소개</a></li>
+                    </ul>
+                </nav><!--left_menu-->
+            </div><!--left-->
+            <div id="right">
+                <nav id="top_menu">
+                    <ul>
+                        <li><a href="index.html">멜론 홈</a></li>
+                        <li><a href="chart.html">멜론차트</a></li>
+                        <li><a href="#">최신</a></li>
+                        <li><a href="#">장르</a></li>
+                        <li><a href="#">멜론DJ</a></li>
+                        <li><a href="#">멜론TV</a></li>
+                        <li><a href="starpost.html">스타포스트</a></li>
+                        <li><a href="#">매거진</a></li>
+                        <li><a href="#">뮤직어워드</a></li>
+                        <li><a href="#">멜론Hi-Fi</a></li>
+                        <li><a href="#">로그인</a></li>
+                    </ul>
+                </nav><!--top_menu-->
+                <p class="next"><input type="image" src="images/next.png" alt="이전버튼"></p>
+                <p class="back"><input type="image" src="images/next.png" alt="다음버튼"></p>
+            </div><!--right-->
+        </div><!--top_wrap-->
+        <article id="main_wrap1" class="main_wrap">
+            <h2>아티스트 명반<span>양희은</span>여러 세대를 아우르는 포크 여제 양희은의 대표작들</h2>
+            <nav class="album">
+                <ul>
+                    <li><a href="#"><img src="images/Hi-Fi/album1.jpg" alt="양희은"></a><p><a href="#">아침 이슬<span>양희은</span></a></p>
+                    <p class="btn1"><input type="image" src="images/Hi-Fi/play_button.png" alt="재생버튼" class="play"></p>
+                    <p class="btn2"><input type="image" src="images/Hi-Fi/down_button.png" alt="다운버튼" class="down"></p></li>
+                    
+                    <li><a href="#"><img src="images/Hi-Fi/album2.jpg" alt="양희은"></a><p><a href="#">양희은 1991<span>양희은</span></a></p>
+                    <p class="btn1"><input type="image" src="images/Hi-Fi/play_button.png" alt="재생버튼" class="play"></p>
+                    <p class="btn2"><input type="image" src="images/Hi-Fi/down_button.png" alt="다운버튼" class="down"></p></li>
+                </ul>
+                <ul class="album2">
+                    <li><a href="#"><img src="images/Hi-Fi/album3.jpg" alt="양희은"></a><p><a href="#">양희은. 30<span>양희은</span></a></p>
+                    <p class="btn1"><input type="image" src="images/Hi-Fi/play_button.png" alt="재생버튼" class="play"></p>
+                    <p class="btn2"><input type="image" src="images/Hi-Fi/down_button.png" alt="다운버튼" class="down"></p></li>
+                    
+                    <li><a href="#"><img src="images/Hi-Fi/album4.jpg" alt="양희은"></a><p><a href="#">[셋 사랑노래]<span>양희은</span></a></p>
+                    <p class="btn1"><input type="image" src="images/Hi-Fi/play_button.png" alt="재생버튼" class="play"></p>
+                    <p class="btn2"><input type="image" src="images/Hi-Fi/down_button.png" alt="다운버튼" class="down"></p></li>
+                </ul>
+            </nav><!--album-->
+        </article><!--main_wrap-->
+        
+        <article id="main_wrap2" class="main_wrap">
+            <h2>아티스트 명반<span>김연우</span>보컬리스트들의 교과서 김연우의 대표작들</h2>
+            <nav class="album">
+                <ul>
+                    <li><a href="#"><img src="images/Hi-Fi/album6.jpg" alt="양희은"></a><p><a href="#">사랑한다는 흔한 말<span>김연우</span></a></p>
+                    <p class="btn1"><input type="image" src="images/Hi-Fi/play_button.png" alt="재생버튼" class="play"></p>
+                    <p class="btn2"><input type="image" src="images/Hi-Fi/down_button.png" alt="다운버튼" class="down"></p></li>
+                    
+                    <li><a href="#"><img src="images/Hi-Fi/album7.jpg" alt="양희은"></a><p><a href="#">이별택시<span>김연우</span></a></p>
+                    <p class="btn1"><input type="image" src="images/Hi-Fi/play_button.png" alt="재생버튼" class="play"></p>
+                    <p class="btn2"><input type="image" src="images/Hi-Fi/down_button.png" alt="다운버튼" class="down"></p></li>
+                </ul>
+                <ul class="album2">
+                    <li><a href="#"><img src="images/Hi-Fi/album8.jpg" alt="양희은"></a><p><a href="#">여전히 아름다운지<span>김연우</span></a></p>
+                    <p class="btn1"><input type="image" src="images/Hi-Fi/play_button.png" alt="재생버튼" class="play"></p>
+                    <p class="btn2"><input type="image" src="images/Hi-Fi/down_button.png" alt="다운버튼" class="down"></p></li>
+                    
+                    <li><a href="#"><img src="images/Hi-Fi/album9.jpg" alt="양희은"></a><p><a href="#">반성문<span>김연우</span></a></p>
+                    <p class="btn1"><input type="image" src="images/Hi-Fi/play_button.png" alt="재생버튼" class="play"></p>
+                    <p class="btn2"><input type="image" src="images/Hi-Fi/down_button.png" alt="다운버튼" class="down"></p></li>
+                </ul>
+            </nav><!--album-->
+        </article><!--main_wrap-->
+    </div><!--wrap-->
+</body>
+</html>

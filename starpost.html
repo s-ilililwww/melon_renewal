@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Melon</title>
+    <!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script>	
+	<![endif]-->
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/layout4.css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+    
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/js3.js"></script>
+</head>
+<body>
+    <div id="wrap">
+       <div id="line1"></div><!--line1-->
+        <header id="top">
+           <div id="t_txt">
+                    <div id="l_txt">
+                        <p><a href="#">멜론티켓</a></p>
+                        <p><a href="#">멜론 아지톡</a></p>
+                    </div><!--l_txt-->
+                    <div id="r_txt">
+                        <p><a href="#">이용권구매</a></p>
+                        <p><a href="#">VIP혜택관</a></p>
+                        <p><a href="#">이벤트</a></p>    
+                    </div><!--r_txt-->   
+           </div><!--t_txt-->
+           <div id="left_top">
+               <h1><a href="index.html"><img src="images/logo.png" alt="logo"></a></h1>
+               <p><input type="search" id="u_search"><input type="image" src="images/search.png" id="img_search" alt="돋보기"></p>
+               <ul>
+                   <li><a href="chart.html">멜론차트</a></li>
+                   <li><a href="starpost.html">스타포스트</a>
+                       <ul class="sub">
+                           <li><a href="#">NOW</a></li>
+                           <li><a href="#">테마스페셜</a></li>
+                           <li><a href="#">아티스트 랭킹</a></li>
+                           <li><a href="#">마이 랭킹</a></li>
+                       </ul>
+                   </li>
+                   <li><a href="video.html">뮤직비디오</a></li>
+                   <li><a href="#">멜론DJ</a></li>
+                   <li><a href="Hi-Fi.html">멜론Hi-Fi</a></li>
+               </ul>
+           </div><!--left_top-->
+           <div id="right_top">
+               <p class="top_evt"><a href="#"><img src="images/event01.png" alt="event"></a></p>
+               <div id="log">
+                   <p class="kakao"><a href="#"><img src="images/kakao.png" alt="kakao">카카오 로그인</a></p>
+                   <div id="log_in">
+                   <p class="log_in">
+                       <input type="text" id="log_id" placeholder="아이디">
+                       <input type="password" id="log_ps" placeholder="비밀번호">
+                   </p>
+                       <input type="button" value="로그인" id="login">
+                   </div>   
+                   <div class="log_txt">
+                       <p class="ck">
+                           <input type="checkbox" name="ck" id="ck" value="아이디 저장">
+                           <label for="ck">아이디 저장</label>
+                       </p>
+                       <p class="log1"><a href="#">아이디/비밀번호 찾기</a></p>
+                       <p class="log2"><a href="#">회원가입</a></p>
+                   </div><!--log_txt-->
+               </div><!--log-->
+           </div><!--right_top-->
+        </header><!--top-->
+        <div id="line2"></div>
+        <div id="line3"></div>
+        
+        <div id="main_wrap">
+            <div id="now">
+                <h2>NOW</h2>
+                <p>아티스트가 직접 쓴 스토리와 추천음악까지! 아티스트들의 최신 소식을 실시간으로 확인하세요.</p>
+            </div><!--now-->
+            <div id="main">
+                <div id="today">
+                    <h3 class="today_txt">오늘의 인기</h3>
+                    <p class="post post1"><img src="images/post1.jpg" alt="포스트"></p>
+                    <p class="post"><img src="images/post2.jpg" alt="포스트"></p>
+                    <p class="post"><img src="images/post3.jpg" alt="포스트"></p>
+                </div><!--today-->
+                <div id="star_post">
+                    <h3>스타 포스트</h3>
+                    <div class="post_box">
+                        <p class="post_img"><img src="images/post_img1.jpg" alt="오마이걸"><span>오마이걸</span></p>
+                        <p class="post_txt_img"><img src="images/post_img1_1.jpg" alt="오마이걸"></p>
+                        <p class="post_txt post_txt1">OH MY GIRL 6th Mini Album [Remember me] '불꽃놀이' Coming Soon 2018.09.10</p>
+                    </div><!--post_box-->
+                    
+                    <div class="post_box">
+                        <p class="post_img"><img src="images/post_img2.jpg" alt="오마이걸"><span>선미</span></p>
+                        <p class="post_txt_img"><img src="images/post_img2_1.jpg" alt="선미"></p>
+                        <p class="post_txt post_txt1">선미 (SUNMI) “WARNING” D-1 2018.09.04 6pm #사이렌 #Siren</p>
+                    </div><!--post_box-->
+                    
+                    <div class="post_box">
+                        <p class="post_img"><img src="images/post_img3.jpg" alt="로시"><span>로시 (Rothy)</span></p>
+                        <p class="post_txt_img"><img src="images/post_img3_1.jpg" alt="로시"></p>
+                        <p class="post_txt post_txt1">로시(Rothy) 1st Mini Album [Shape Of Rothy] 쇼케이스 현장 쇼케이스 시작 전 리허설도 열심열심</p>
+                    </div><!--post_box-->
+                    
+                    <div class="post_box">
+                        <p class="post_img"><img src="images/post_img4.jpg" alt="멜로망스"><span>멜로망스</span></p>
+                        <p class="post_txt_img"><img src="images/post_img4_1.jpg" alt="멜로망스"></p>
+                        <p class="post_txt">7월 3일(화) 오후 6시 발매되는 다섯 번째 미니앨범 'The Fairy Tale' 앨범 커버 #멜로망스 #정동환 #김민석 #thefairytale #동화</p>
+                    </div><!--post_box-->
+                    
+                    <div class="post_box">
+                        <p class="post_img"><img src="images/post_img5.jpg" alt="헤이즈 (Heize)"><span>헤이즈 (Heize)</span></p>
+                        <p class="post_txt_img"><img src="images/post_img5_1.jpg" alt="헤이즈 (Heize)"></p>
+                        <p class="post_txt">드디어 오늘, 오후 6시! 헤이즈의 새 미니 앨범 &lt;바람&gt;이 전 음원사이트를 통해 공개됩니다. 더블 타이틀 곡 ‘내가 더 나빠’와 ‘jenga’ 많은 사랑 부탁드립니다! 오늘 바람으로 만나요!</p>
+                    </div><!--post_box-->
+                    
+                    <div class="post_box">
+                        <p class="post_img"><img src="images/post_img6.jpg" alt="Red Velvet (레드벨벳)"><span>Red Velvet (레드벨벳)</span></p>
+                        <p class="post_txt_img"><img src="images/post_img6_1.jpg" alt="Red Velvet (레드벨벳)"></p>
+                        <p class="post_txt post_txt1">Red Velvet [Summer Magic] Photo</p>
+                    </div><!--post_box-->
+                    
+                    <div class="post_box">
+                        <p class="post_img"><img src="images/post_img7.jpg" alt="TWICE (트와이스)"><span>TWICE (트와이스)</span></p>
+                        <p class="post_txt_img"><img src="images/post_img7_1.jpg" alt="TWICE (트와이스)"></p>
+                        <p class="post_txt">TWICE 멤버들에게 묻고 싶은 질문들을 #멤버명 과 함께 댓글로 남겨주세요! 트와이스의 ASK IN A BOX에서 직접 답해드립니다 :D #나연 #정연 #모모 #사나 #지효 #미나 #다현 #채영 #쯔위 #SummerNights #DanceTheNightAway</p>
+                    </div><!--post_box-->
+                    
+                    <div class="post_box">
+                        <p class="post_img"><img src="images/post_img8.jpg" alt="DEAN"><span>DEAN</span></p>
+                        <p class="post_txt_img"><img src="images/post_img8_1.jpg" alt="DEAN"></p>
+                        <p class="post_txt post_txt1">12월 26일. DEAN 새 싱글 발매 첫 번째 티저</p>
+                    </div><!--post_box-->
+                    
+                    <div class="post_box">
+                        <p class="post_img"><img src="images/post_img9.jpg" alt="10cm"><span>10cm</span></p>
+                        <p class="post_txt_img"><img src="images/post_img9_1.jpg" alt="10cm"></p>
+                        <p class="post_txt">10cm 매트리스 [Mattress] 새로산 침대와 그속에 우리가 세상에 전부인 것처럼 2018.08.23 6pm Release - #10cm #십센치 #권정열 #매트리스 #mattress - NEXT- M/V Teaser</p>
+                    </div><!--post_box-->
+                    
+                    <div class="post_box">
+                        <p class="post_img"><img src="images/post_img5.jpg" alt="헤이즈 (Heize)"><span>헤이즈 (Heize)</span></p>
+                        <p class="post_txt_img"><img src="images/post_img5_2.jpg" alt="헤이즈 (Heize)"></p>
+                        <p class="post_txt post_txt1">04. 잘 살길 바래(with Davii)</p>
+                    </div><!--post_box-->
+                </div><!--star_post-->
+            </div><!--main-->
+        </div><!--main_wrap-->
+        
+        <footer id="bottom">
+            <nav id="btm">
+                <ul>
+                    <li>회사소개 |</li>
+                    <li>이용약관 |</li>
+                    <li>개인정보처리방침 |</li>
+                    <li>청소년보호정책 |</li>
+                    <li>제휴/프로모션문의 |</li>
+                    <li>이메일주소무단수집거부 |</li>
+                    <li>파트너센터 |</li>
+                    <li>사업자정보확인</li>
+                </ul>
+            </nav><!--btm-->
+            <address>(주) 카카오M | 서울시 강남구 테혜란로 103길 17 | 대표이사 : 석일우 | 사업자등록번호 : 000-00-00000 | 통신판매업 신고번호 : 제0000-서울강남-00000호<br>문의전화(평일 09:00~18:00): 0000-0000 (유료) | 이메일 : ilwoo_seok@naver.com | 호스팅 제공자 : (주) 카카오M &copy;Kakao M Corp. All rights reserved.</address>
+        </footer><!--bottom-->
+        <div id="bt_img">
+            <img src="images/bottom/bottom1.png" alt="대상"><img src="images/bottom/bottom2.png" alt="1위"><img src="images/bottom/bottom3.png" alt="대상"><img src="images/bottom/bottom4.png" alt="저작권"><img src="images/bottom/bottom5.png" alt="저작권"><img src="images/bottom/bottom6.png" alt="인증"><img src="images/bottom/bottom7.jpg" alt="이미지"><img src="images/bottom/bottom8.jpg" alt="이미지">
+        </div><!--spon-->
+    </div><!--wrap-->
+</body>
+</html>

@@ -1,0 +1,124 @@
+@charset "utf-8";
+
+@import url(top.css);
+@import url(bottom.css);
+
+
+/*contents*/
+#contents{width: 1200px; margin: 37px auto 0;}
+#m_album{width: 1198px; height: 440px;background-color: #fafafa; position: relative;}
+.music_txt{width: 400px; height: 30px; line-height: 30px; padding: 15px 0 0 50px;}
+.music_txt span{font-size: 15px; padding: 0 10px; cursor: pointer; margin-bottom: 5px; float: left;}
+.new_m{cursor: pointer;}
+#m_album .new_m{font-size: 18px; font-weight: bold; cursor: text;}
+.music_txt span:hover{color: #02cb36;}
+#m_album .new_m:hover{border: none;}
+
+p.plus{width: 50px; position: absolute; right: 49px;top: 30px;}
+p.plus a{font-size: 12px;}
+
+.music1{width: 1150px; height: 160px; margin: 0 auto; clear: both;}
+.music1 div{float: left; margin: 0 22.1px;  cursor: pointer;}
+.music1 div img{box-shadow: 2px 2px 1px}
+.music1 div p span{display: block; font-size: 1.2em;}
+.music1 div p{ font-size: 13px; line-height: 1.5em; background:  url(../images/button10.png) no-repeat 105px 50%;}
+
+.music2{width: 1150px; height: 160px; margin: 0 auto; clear: both; margin-top: 40px;}
+.music2 div{float: left; margin: 0 22.1px;  cursor: pointer;}
+.music2 div img{box-shadow: 2px 2px 1px}
+.music2 div p span{display: block; font-size: 1.2em;}
+.music2 div p{ font-size: 13px; line-height: 1.5em; background: url(../images/button10.png) no-repeat 105px 50%;}
+
+#left{width: 700px; height: 800px; float: left;}
+#chart{width: 700px; height: 610px; margin-top: 50px;}
+.tit1{font-size: 20px; float: left; position: relative; text-indent: 1em; margin-bottom: 10px;}
+.t_txt1{float: left; margin-left: 20px; font-size: 12px; margin-top: 5px;}
+#chart_txt{clear: both; border-top: 1px solid #000;}
+#chart_txt ul li{height: 50px; line-height: 50px; border-bottom: 1px solid #ddd;}
+#chart_txt ul li .img{display: none; height: 60px; cursor: pointer;}
+#chart_txt ul li:hover .img{display: block;}
+#chart_txt ul li h3{width: 60px; float: left; font-size: 20px; text-align: center;}
+#chart_txt ul li:hover h3{font-size: 35px;}
+#chart_txt ul li p{margin-left: 40px; width: 300px; float: left; font-weight: bold; font-size: 15px;  cursor: pointer;}
+#chart_txt ul li input{border: none; width: 30px; height: 30px;}
+.btn1{background: url("../images/button13.png") no-repeat center center; cursor: pointer; outline: none;}
+.btn2{background: url("../images/button14.png") no-repeat center center; cursor: pointer; outline: none;}
+.btn3{background: url("../images/button10.png") no-repeat center center; cursor: pointer; outline: none;}
+.ch_txt{width: 100px; float: left; font-size: 12px; cursor: pointer;}
+.img{float: left; margin: 5px 30px; display: none;}
+#chart_txt ul li:hover{height: 70px; line-height: 70px;}
+#chart_txt ul li:hover p{width: 180px;}
+
+#chart_txt ul li.selected{height: 70px; line-height: 70px;}
+#chart_txt ul li.selected p{width: 180px;}
+#chart_txt ul li.selected .img{display: block;}
+#chart_txt ul li.selected h3{font-size: 35px;}
+
+#button{width: 700px; height: 50px; line-height: 50px; background-color: #e0e5e9;}
+#button p{float: left;}
+#button p input{width: 100px; height: 30px; background-color: #fff; border-radius: 7px; border: none; border: 1px solid #333; text-indent: 1.5em; cursor: pointer; line-height: 0px;}
+#button p:nth-child(1) img{position: absolute; left: 10px; width: 20px; top: 16px; cursor: pointer;}
+#button p:nth-child(1){position: relative; margin-left: 20px;}
+#button p:nth-child(2) img{position: absolute; left: 10px; width: 20px; top: 16px; cursor: pointer;}
+#button p:nth-child(2){position: relative; margin-left: 10px;}
+#button p:nth-child(3){float: right; font-size: 12px; margin-right: 10px;}
+
+#lb_m{width: 700px; height: 450px; position: relative;}
+#lb_m h2{font-size: 20px; margin-top: 30px;}
+.lb_m_txt{font-size: 12px; position: absolute; top: 45px; right: 10px;}
+.lb_m1{width: 300px; height: 300px; float: left; text-align: center; background-color: #5a5252; margin-top: 40px; margin-right: 100px; cursor: pointer;}
+.lb_m1 img{width: 150px; margin-top: 50px;}
+.lb_m1 p{color: #fff; margin-top: 10px; line-height: 30px;}
+
+.lb_m2{width: 300px; height: 300px; float: left; text-align: center; background-color: #4cbac7; margin-top: 40px; cursor: pointer;}
+.lb_m2 img{width: 150px; margin-top: 50px;}
+.lb_m2 p{color: #fff; margin-top: 10px; line-height: 30px;}
+
+#right{width: 430px; height: 800px; float: left; margin-left: 68px;}
+#right_m{width: 430px; border-top: 1px solid #000; margin-top: 80px; border-bottom: 1px solid #000;}
+#right h2{font-size: 20px; margin-top: 50px; float: left;}
+#right > p{ margin-top: 50px; float: right; font-weight: bold; font-size: 15px; width: 60px; height: 20px; line-height: 20px; color: #ccc;}
+#right > p span{color: #000;}
+#right > p img{width: 12px; height: 16px;}
+
+.food_m{clear: both; width: 430px; height: 238px; cursor: pointer;}
+.food_m p{text-align: center; line-height: 1.2em;}
+.food_m p span{display: block; font-weight: bold; font-size: 25px; margin-top: 25px; line-height: 2em;}
+.r_img{margin-top: 10px;}
+
+.f1{width: 250px; height: 60px; margin: 30px auto 0 ; font-size: 12px; cursor: pointer;}
+.f1 p span{display: block; color: #a9a9a9; font-size: 13px; line-height: 25px;}
+.f2{margin: 15px auto 0 ; width: 250px; height: 60px; font-size: 12px; cursor: pointer;}
+.f2 p span{display: block; color: #a9a9a9; font-size: 13px; line-height: 25px;}
+.f3{margin: 15px auto  ; width: 250px; height: 60px; font-size: 12px; cursor: pointer;}
+.f3 p span{display: block; color: #a9a9a9; font-size: 13px; line-height: 25px;}
+
+.r_txt1{margin-left: 105px;}
+
+.image1_r{float: left;}
+.image2_r{float: left;}
+.image3_r{float: left;}
+
+#video{ width: 430px; height: 435px; position: relative;}
+#video h2{font-size: 20px; width: 90px; height: 30px;}
+#video > p{float: right; font-size: 12px; position: absolute; top: 45px; right: 10px;}
+
+#video1{width: 430px; height: 330px; clear: both; padding-top: 25px;}
+.video1_1{width: 200px; text-align: center; line-height: 1.5em; margin: 10px 0 0; background-color: #000; color: #ccc; float: left; cursor: pointer;}
+.video1_1 span{display: block;  color: #fff; font-weight: bold;}
+.video1_1 img{width: 100%;}
+.video1_2{width: 200px; text-align: center; line-height: 1.5em; margin: 10px 0 0; background-color: #000; color: #ccc; float: right; cursor: pointer;}
+.video1_2 span{display: block;  color: #fff; font-weight: bold;}
+.video1_2 img{width: 100%;}
+
+.video1_3{width: 200px; text-align: center; line-height: 1.5em; margin: 17px 0 0; background-color: #000; color: #ccc; float: left; cursor: pointer;}
+.video1_3 span{display: block;  color: #fff; font-weight: bold;}
+.video1_3 img{width: 100%;}
+.video1_4{width: 200px; text-align: center; line-height: 1.5em; margin: 17px 0 0; background-color: #000; color: #ccc; float: right; cursor: pointer;}
+.video1_4 span{display: block;  color: #fff; font-weight: bold;}
+.video1_4 img{width: 100%;}
+
+#banner{width: 100%; margin-top: 1100px; height: 104px; background-color: #e9eef2;}
+#event_b{width: 1200px; height: 104px; margin: 0 auto;}
+#event_b img:nth-child(2){float: right;}
+

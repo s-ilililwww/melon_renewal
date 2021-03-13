@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Melon</title>
+    <!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script>	
+	<![endif]-->
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/layout2.css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+    
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/js1.js"></script>
+</head>
+<body>
+    <div id="wrap">
+       <div id="line1"></div><!--line1-->
+        <header id="top">
+           <div id="t_txt">
+                    <div id="l_txt">
+                        <p><a href="#">멜론티켓</a></p>
+                        <p><a href="#">멜론 아지톡</a></p>
+                    </div><!--l_txt-->
+                    <div id="r_txt">
+                        <p><a href="#">이용권구매</a></p>
+                        <p><a href="#">VIP혜택관</a></p>
+                        <p><a href="#">이벤트</a></p>    
+                    </div><!--r_txt-->   
+           </div><!--t_txt-->
+           <div id="left_top">
+               <h1><a href="index.html"><img src="images/logo.png" alt="logo"></a></h1>
+               <p><input type="search" id="u_search"><input type="image" src="images/search.png" id="img_search" alt="돋보기"></p>
+               <ul>
+                   <li><a href="chart.html">멜론차트</a>
+                       <ul class="sub">
+                           <li><a href="#">멜론TOP50</a></li>
+                           <li><a href="#">주간 인기상</a></li>
+                           <li><a href="#">트렌드차트</a></li>
+                           <li><a href="#">스타일 차트</a></li>
+                           <li><a href="#">시대별 차트</a></li>
+                       </ul>
+                   </li>
+                   <li><a href="starpost.html">스타포스트</a></li>
+                   <li><a href="video.html">뮤직비디오</a></li>
+                   <li><a href="#">멜론DJ</a></li>
+                   <li><a href="Hi-Fi.html">멜론Hi-Fi</a></li>
+               </ul>
+           </div><!--left_top-->
+           <div id="right_top">
+               <p class="top_evt"><a href="#"><img src="images/event01.png" alt="event"></a></p>
+               <div id="log">
+                   <p class="kakao"><a href="#"><img src="images/kakao.png" alt="kakao">카카오 로그인</a></p>
+                   <div id="log_in">
+                   <p class="log_in">
+                       <input type="text" id="log_id" placeholder="아이디">
+                       <input type="password" id="log_ps" placeholder="비밀번호">
+                   </p>
+                       <input type="button" value="로그인" id="login">
+                   </div>   
+                   <div class="log_txt">
+                       <p class="ck">
+                           <input type="checkbox" name="ck" id="ck" value="아이디 저장">
+                           <label for="ck">아이디 저장</label>
+                       </p>
+                       <p class="log1"><a href="#">아이디/비밀번호 찾기</a></p>
+                       <p class="log2"><a href="#">회원가입</a></p>
+                   </div><!--log_txt-->
+               </div><!--log-->
+           </div><!--right_top-->
+        </header><!--top-->
+        <div id="line2"></div>
+        <div id="line3"></div>
+        
+        <div id="chart_wrap">
+            <div id="top50">
+                <h2>멜론 TOP50</h2>
+                <div class="music_img">
+                    <p><img src="images/top3.jpg" alt="1등"></p>
+                    <p><img src="images/top3_1.jpg" alt="2등"></p>
+                    <p><img src="images/top3_2.jpg" alt="3등"></p>
+                </div><!--music_img-->
+            </div><!--top50-->
+            
+            <div id="button">
+                <ul>
+                    <li><p></p>TOP50 듣기</li>
+                    <li><p></p>듣기</li>
+                    <li><p></p>담기</li>
+                    <li><p></p>다운</li>
+                    <li><p></p>FLAC</li>
+                    <li><p></p>선물</li>
+                </ul>
+            </div><!--button-->
+            <div id="chart">
+                <table>
+                    <tr>
+                        <th class="ct_1"><input type="checkbox" class="chk1" id="chk_all">순위</th>
+                        <th class="ct_2">곡정보</th>
+                        <th class="ct_3">앨범</th>
+                        <th class="ct_4">좋아요</th>
+                        <th class="ct_5">듣기</th>
+                        <th class="ct_6">담기</th>
+                        <th class="ct_7">다운</th>
+                        <th class="ct_8">뮤비</th>
+                        <th class="ct_9">링벨</th>
+                    </tr>
+                    <tr>
+                        <td class="ct_1"><input type="checkbox" class="chk1" name="chk1">1</td>
+                        <td class="ct_2">
+                            <a href="#"><img src="images/album/album29.jpg" alt="Power Up"><span>Power Up</span>Red Velvet(레드벨벳)</a>
+                        </td>
+                        <td class="ct_3"><a href="#">Summer Magic - Summe...</a></td>
+                        <td class="ct_4">53,287</td>
+                        <td class="ct_5"><input type="button" value=" "></td>
+                        <td class="ct_6"><input type="button" value=" "></td>
+                        <td class="ct_7"><input type="button" value=" "></td>
+                        <td class="ct_8"><input type="button" value=" "></td>
+                        <td class="ct_9"><input type="button" value=" "></td>
+                    </tr>
+                    <tr>
+                        <td class="ct_1"><input type="checkbox" class="chk1" name="chk2">2</td>
+                        <td class="ct_2">
+                            <a href="#"><img src="images/album/album22.jpg" alt="Way Back Home"><span>Way Back Home</span>숀(SHAUN)</a>
+                        </td>
+                        <td class="ct_3"><a href="#">Take</a></td>
+                        <td class="ct_4">161,697</td>
+                        <td class="ct_5"><input type="button" value=" "></td>
+                        <td class="ct_6"><input type="button" value=" "></td>
+                        <td class="ct_7"><input type="button" value=" "></td>
+                        <td class="ct_8"><input type="button" value=" "></td>
+                        <td class="ct_9"><input type="button" value=" "></td>
+                    </tr>
+                    <tr>
+                        <td class="ct_1"><input type="checkbox" class="chk1" name="chk3">3</td>
+                        <td class="ct_2">
+                            <a href="#"><img src="images/album/album30.jpg" alt="SoulMate (Feat. 아이유)"><span>SoulMate (Feat. 아이유)</span>지코 (ZICO)</a>
+                        </td>
+                        <td class="ct_3"><a href="#">SoulMate</a></td>
+                        <td class="ct_4">83,647</td>
+                        <td class="ct_5"><input type="button" value=" "></td>
+                        <td class="ct_6"><input type="button" value=" "></td>
+                        <td class="ct_7"><input type="button" value=" "></td>
+                        <td class="ct_8"><input type="button" value=" "></td>
+                        <td class="ct_9"><input type="button" value=" "></td>
+                    </tr>
+                    <tr>
+                        <td class="ct_1"><input type="checkbox" class="chk1" name="chk4">4</td>
+                        <td class="ct_2">
+                            <a href="#"><img src="images/album/album25.jpg" alt="너나 해 (Egotistic)"><span>너나 해 (Egotistic)</span>마마무(Mamamoo)</a>
+                        </td>
+                        <td class="ct_3"><a href="#">RED MOON</a></td>
+                        <td class="ct_4">81,873</td>
+                        <td class="ct_5"><input type="button" value=" "></td>
+                        <td class="ct_6"><input type="button" value=" "></td>
+                        <td class="ct_7"><input type="button" value=" "></td>
+                        <td class="ct_8"><input type="button" value=" "></td>
+                        <td class="ct_9"><input type="button" value=" "></td>
+                    </tr>
+                    <tr>
+                        <td class="ct_1"><input type="checkbox" class="chk1" name="chk5">5</td>
+                        <td class="ct_2">
+                            <a href="#"><img src="images/album/album26.jpg" alt="Love U"><span>Love U</span>청하</a>
+                        </td>
+                        <td class="ct_3"><a href="#">Blooming Blue</a></td>
+                        <td class="ct_4">52,316</td>
+                        <td class="ct_5"><input type="button" value=" "></td>
+                        <td class="ct_6"><input type="button" value=" "></td>
+                        <td class="ct_7"><input type="button" value=" "></td>
+                        <td class="ct_8"><input type="button" value=" "></td>
+                        <td class="ct_9"><input type="button" value=" "></td>
+                    </tr>
+                    <tr>
+                        <td class="ct_1"><input type="checkbox" class="chk1" name="chk6">6</td>
+                        <td class="ct_2">
+                            <a href="#"><img src="images/album/album27.jpg" alt="죽겠다 (KILLING ME)"><span>죽겠다 (KILLING ME)</span>iKON</a>
+                        </td>
+                        <td class="ct_3"><a href="#">NEW KIDS : CONTINUE</a></td>
+                        <td class="ct_4">50,239</td>
+                        <td class="ct_5"><input type="button" value=" "></td>
+                        <td class="ct_6"><input type="button" value=" "></td>
+                        <td class="ct_7"><input type="button" value=" "></td>
+                        <td class="ct_8"><input type="button" value=" "></td>
+                        <td class="ct_9"><input type="button" value=" "></td>
+                    </tr>
+                    <tr>
+                        <td class="ct_1"><input type="checkbox" class="chk1" name="chk7">7</td>
+                        <td class="ct_2">
+                            <a href="#"><img src="images/album/album28.jpg" alt="좋은 날"><span>좋은 날</span>멜로망스</a>
+                        </td>
+                        <td class="ct_3"><a href="#">미스터 션샤인 OST Part.5</a></td>
+                        <td class="ct_4">13,822</td>
+                        <td class="ct_5"><input type="button" value=" "></td>
+                        <td class="ct_6"><input type="button" value=" "></td>
+                        <td class="ct_7"><input type="button" value=" "></td>
+                        <td class="ct_8"><input type="button" value=" "></td>
+                        <td class="ct_9"><input type="button" value=" "></td>
+                    </tr>
+                    <tr>
+                        <td class="ct_1"><input type="checkbox" class="chk1" name="chk8">8</td>
+                        <td class="ct_2">
+                            <a href="#"><img src="images/album/album15.jpg" alt="You"><span>You</span>멜로망스</a>
+                        </td>
+                        <td class="ct_3"><a href="#">투유 프로젝트 - 슈가맨2 Part.2</a></td>
+                        <td class="ct_4">134,709</td>
+                        <td class="ct_5"><input type="button" value=" "></td>
+                        <td class="ct_6"><input type="button" value=" "></td>
+                        <td class="ct_7"><input type="button" value=" "></td>
+                        <td class="ct_8"><input type="button" value=" "></td>
+                        <td class="ct_9"><input type="button" value=" "></td>
+                    </tr>
+                    <tr>
+                        <td class="ct_1"><input type="checkbox" class="chk1" name="chk9">9</td>
+                        <td class="ct_2">
+                            <a href="#"><img src="images/album/album01.jpg" alt="비"><span>비</span>폴킴</a>
+                        </td>
+                        <td class="ct_3"><a href="#">비</a></td>
+                        <td class="ct_4">133,211</td>
+                        <td class="ct_5"><input type="button" value=" "></td>
+                        <td class="ct_6"><input type="button" value=" "></td>
+                        <td class="ct_7"><input type="button" value=" "></td>
+                        <td class="ct_8"><input type="button" value=" "></td>
+                        <td class="ct_9"><input type="button" value=" "></td>
+                    </tr>
+                    <tr>
+                        <td class="ct_1"><input type="checkbox" class="chk1" name="chk10">10</td>
+                        <td class="ct_2">
+                            <a href="#"><img src="images/album/album02.jpg" alt="넋두리"><span>넋두리</span>닐로 (Nilo)</a>
+                        </td>
+                        <td class="ct_3"><a href="#">넋두리</a></td>
+                        <td class="ct_4">71,505</td>
+                        <td class="ct_5"><input type="button" value=" "></td>
+                        <td class="ct_6"><input type="button" value=" "></td>
+                        <td class="ct_7"><input type="button" value=" "></td>
+                        <td class="ct_8"><input type="button" value=" "></td>
+                        <td class="ct_9"><input type="button" value=" "></td>
+                    </tr>
+                    <tr>
+                        <td class="ct_1"><input type="checkbox" class="chk1" name="chk11">11</td>
+                        <td class="ct_2">
+                            <a href="#"><img src="images/album/album03.jpg" alt="Shape of You"><span>Shape of You</span>Ed Sheeran</a>
+                        </td>
+                        <td class="ct_3"><a href="#">÷ (Deluxe)</a></td>
+                        <td class="ct_4">237,232</td>
+                        <td class="ct_5"><input type="button" value=" "></td>
+                        <td class="ct_6"><input type="button" value=" "></td>
+                        <td class="ct_7"><input type="button" value=" "></td>
+                        <td class="ct_8"><input type="button" value=" "></td>
+                        <td class="ct_9"><input type="button" value=" "></td>
+                    </tr>
+                    <tr>
+                        <td class="ct_1"><input type="checkbox" class="chk1" name="chk12">12</td>
+                        <td class="ct_2">
+                            <a href="#"><img src="images/album/album04.jpg" alt="Thunder"><span>Thunder</span>Imagine Dragons</a>
+                        </td>
+                        <td class="ct_3"><a href="#">Evolve</a></td>
+                        <td class="ct_4">90,954</td>
+                        <td class="ct_5"><input type="button" value=" "></td>
+                        <td class="ct_6"><input type="button" value=" "></td>
+                        <td class="ct_7"><input type="button" value=" "></td>
+                        <td class="ct_8"><input type="button" value=" "></td>
+                        <td class="ct_9"><input type="button" value=" "></td>
+                    </tr>
+                    <tr>
+                        <td class="ct_1"><input type="checkbox" class="chk1" name="chk13">13</td>
+                        <td class="ct_2">
+                            <a href="#"><img src="images/album/album05.jpg" alt="밤편지"><span>밤편지</span>아이유</a>
+                        </td>
+                        <td class="ct_3"><a href="#">밤편지</a></td>
+                        <td class="ct_4">272,883</td>
+                        <td class="ct_5"><input type="button" value=" "></td>
+                        <td class="ct_6"><input type="button" value=" "></td>
+                        <td class="ct_7"><input type="button" value=" "></td>
+                        <td class="ct_8"><input type="button" value=" "></td>
+                        <td class="ct_9"><input type="button" value=" "></td>
+                    </tr>
+                    <tr>
+                        <td class="ct_1"><input type="checkbox" class="chk1" name="chk14">14</td>
+                        <td class="ct_2">
+                            <a href="#"><img src="images/album/album06.jpg" alt="빨간 맛 (Red Flavor)"><span>빨간 맛 (Red Flavor)</span>Red Velvet(레드벨벳)</a>
+                        </td>
+                        <td class="ct_3"><a href="#">The Red Summer - Summer Mini Album</a></td>
+                        <td class="ct_4">199,884</td>
+                        <td class="ct_5"><input type="button" value=" "></td>
+                        <td class="ct_6"><input type="button" value=" "></td>
+                        <td class="ct_7"><input type="button" value=" "></td>
+                        <td class="ct_8"><input type="button" value=" "></td>
+                        <td class="ct_9"><input type="button" value=" "></td>
+                    </tr>
+                    <tr>
+                        <td class="ct_1"><input type="checkbox" class="chk1" name="chk15">15</td>
+                        <td class="ct_2">
+                            <a href="#"><img src="images/album/album07.jpg" alt="선물"><span>선물</span>멜로망스</a>
+                        </td>
+                        <td class="ct_3"><a href="#">Moonlight</a></td>
+                        <td class="ct_4">262,218</td>
+                        <td class="ct_5"><input type="button" value=" "></td>
+                        <td class="ct_6"><input type="button" value=" "></td>
+                        <td class="ct_7"><input type="button" value=" "></td>
+                        <td class="ct_8"><input type="button" value=" "></td>
+                        <td class="ct_9"><input type="button" value=" "></td>
+                    </tr>
+                    <tr>
+                        <td class="ct_1"><input type="checkbox" class="chk1" name="chk16">16</td>
+                        <td class="ct_2">
+                            <a href="#"><img src="images/album/album08.jpg" alt="Havana (Feat. Young Thug)"><span>Havana (Feat. Young Thug)</span>Camila Cabello</a>
+                        </td>
+                        <td class="ct_3"><a href="#">Camila</a></td>
+                        <td class="ct_4">157,285</td>
+                        <td class="ct_5"><input type="button" value=" "></td>
+                        <td class="ct_6"><input type="button" value=" "></td>
+                        <td class="ct_7"><input type="button" value=" "></td>
+                        <td class="ct_8"><input type="button" value=" "></td>
+                        <td class="ct_9"><input type="button" value=" "></td>
+                    </tr>
+                    <tr>
+                        <td class="ct_1"><input type="checkbox" class="chk1" name="chk17">17</td>
+                        <td class="ct_2">
+                            <a href="#"><img src="images/album/album09.jpg" alt="가을 안부"><span>가을 안부</span>먼데이 키즈 (Monday Kiz)</a>
+                        </td>
+                        <td class="ct_3"><a href="#">가을 안부</a></td>
+                        <td class="ct_4">96,597</td>
+                        <td class="ct_5"><input type="button" value=" "></td>
+                        <td class="ct_6"><input type="button" value=" "></td>
+                        <td class="ct_7"><input type="button" value=" "></td>
+                        <td class="ct_8"><input type="button" value=" "></td>
+                        <td class="ct_9"><input type="button" value=" "></td>
+                    </tr>
+                    <tr>
+                        <td class="ct_1"><input type="checkbox" class="chk1" name="chk18">18</td>
+                        <td class="ct_2">
+                            <a href="#"><img src="images/album/album10.jpg" alt="지나오다"><span>지나오다</span>닐로 (Nilo)</a>
+                        </td>
+                        <td class="ct_3"><a href="#">About You</a></td>
+                        <td class="ct_4">167,570</td>
+                        <td class="ct_5"><input type="button" value=" "></td>
+                        <td class="ct_6"><input type="button" value=" "></td>
+                        <td class="ct_7"><input type="button" value=" "></td>
+                        <td class="ct_8"><input type="button" value=" "></td>
+                        <td class="ct_9"><input type="button" value=" "></td>
+                    </tr>
+                    <tr>
+                        <td class="ct_1"><input type="checkbox" class="chk1" name="chk19">19</td>
+                        <td class="ct_2">
+                            <a href="#"><img src="images/album/album11.jpg" alt="My Way"><span>My Way</span>이수 (엠씨 더 맥스)</a>
+                        </td>
+                        <td class="ct_3"><a href="#">돈꽃 OST Part.1</a></td>
+                        <td class="ct_4">113,441</td>
+                        <td class="ct_5"><input type="button" value=" "></td>
+                        <td class="ct_6"><input type="button" value=" "></td>
+                        <td class="ct_7"><input type="button" value=" "></td>
+                        <td class="ct_8"><input type="button" value=" "></td>
+                        <td class="ct_9"><input type="button" value=" "></td>
+                    </tr>
+                    <tr>
+                        <td class="ct_1"><input type="checkbox" class="chk1" name="chk20">20</td>
+                        <td class="ct_2">
+                            <a href="#"><img src="images/album/album12.jpg" alt="그날처럼"><span>그날처럼</span>장덕철</a>
+                        </td>
+                        <td class="ct_3"><a href="#">Summer Magic - Summe...</a></td>
+                        <td class="ct_4">203,360</td>
+                        <td class="ct_5"><input type="button" value=" "></td>
+                        <td class="ct_6"><input type="button" value=" "></td>
+                        <td class="ct_7"><input type="button" value=" "></td>
+                        <td class="ct_8"><input type="button" value=" "></td>
+                        <td class="ct_9"><input type="button" value=" "></td>
+                    </tr>
+                    <tr>
+                        <td class="ct_1"><input type="checkbox" class="chk1" name="chk21">21</td>
+                        <td class="ct_2">
+                            <a href="#"><img src="images/album/album13.jpg" alt="Heart Shaker"><span>Heart Shaker</span>TWICE (트와이스)</a>
+                        </td>
+                        <td class="ct_3"><a href="#">Merry &amp; Happy</a></td>
+                        <td class="ct_4">124,989</td>
+                        <td class="ct_5"><input type="button" value=" "></td>
+                        <td class="ct_6"><input type="button" value=" "></td>
+                        <td class="ct_7"><input type="button" value=" "></td>
+                        <td class="ct_8"><input type="button" value=" "></td>
+                        <td class="ct_9"><input type="button" value=" "></td>
+                    </tr>
+                    <tr>
+                        <td class="ct_1"><input type="checkbox" class="chk1" name="chk22">22</td>
+                        <td class="ct_2">
+                            <a href="#"><img src="images/album/album14.jpg" alt="Roller Coaster"><span>Roller Coaster</span>청하</a>
+                        </td>
+                        <td class="ct_3"><a href="#">Offset</a></td>
+                        <td class="ct_4">135,827</td>
+                        <td class="ct_5"><input type="button" value=" "></td>
+                        <td class="ct_6"><input type="button" value=" "></td>
+                        <td class="ct_7"><input type="button" value=" "></td>
+                        <td class="ct_8"><input type="button" value=" "></td>
+                        <td class="ct_9"><input type="button" value=" "></td>
+                    </tr>
+                    <tr>
+                        <td class="ct_1"><input type="checkbox" class="chk1" name="chk23">23</td>
+                        <td class="ct_2">
+                            <a href="#"><img src="images/album/album16.jpg" alt="별이 빛나는 밤"><span>별이 빛나는 밤</span>마마무(Mamamoo)</a>
+                        </td>
+                        <td class="ct_3"><a href="#">Yellow Flower</a></td>
+                        <td class="ct_4">142,275</td>
+                        <td class="ct_5"><input type="button" value=" "></td>
+                        <td class="ct_6"><input type="button" value=" "></td>
+                        <td class="ct_7"><input type="button" value=" "></td>
+                        <td class="ct_8"><input type="button" value=" "></td>
+                        <td class="ct_9"><input type="button" value=" "></td>
+                    </tr>
+                    <tr>
+                        <td class="ct_1"><input type="checkbox" class="chk1" name="chk24">24</td>
+                        <td class="ct_2">
+                            <a href="#"><img src="images/album/album17.jpg" alt="꽃 길"><span>꽃 길</span>BIGBANG</a>
+                        </td>
+                        <td class="ct_3"><a href="#">꽃 길</a></td>
+                        <td class="ct_4">172,561</td>
+                        <td class="ct_5"><input type="button" value=" "></td>
+                        <td class="ct_6"><input type="button" value=" "></td>
+                        <td class="ct_7"><input type="button" value=" "></td>
+                        <td class="ct_8"><input type="button" value=" "></td>
+                        <td class="ct_9"><input type="button" value=" "></td>
+                    </tr>
+                    <tr>
+                        <td class="ct_1"><input type="checkbox" class="chk1" name="chk25">25</td>
+                        <td class="ct_2">
+                            <a href="#"><img src="images/album/album18.jpg" alt="What is Love?"><span>What is Love?</span>TWICE (트와이스)</a>
+                        </td>
+                        <td class="ct_3"><a href="#">What is Love?</a></td>
+                        <td class="ct_4">118,601</td>
+                        <td class="ct_5"><input type="button" value=" "></td>
+                        <td class="ct_6"><input type="button" value=" "></td>
+                        <td class="ct_7"><input type="button" value=" "></td>
+                        <td class="ct_8"><input type="button" value=" "></td>
+                        <td class="ct_9"><input type="button" value=" "></td>
+                    </tr>
+                    <tr>
+                        <td class="ct_1"><input type="checkbox" class="chk1" name="chk26">26</td>
+                        <td class="ct_2">
+                            <a href="#"><img src="images/album/album19.jpg" alt="붕붕 (Feat. 식케이) (Prod. GroovyRoom)"><span>붕붕 (Feat. 식케이) (Prod. GroovyRoom)</span>HAON (김하온)</a>
+                        </td>
+                        <td class="ct_3"><a href="#">고등래퍼2 Final</a></td>
+                        <td class="ct_4">11,765</td>
+                        <td class="ct_5"><input type="button" value=" "></td>
+                        <td class="ct_6"><input type="button" value=" "></td>
+                        <td class="ct_7"><input type="button" value=" "></td>
+                        <td class="ct_8"><input type="button" value=" "></td>
+                        <td class="ct_9"><input type="button" value=" "></td>
+                    </tr>
+                    <tr>
+                        <td class="ct_1"><input type="checkbox" class="chk1" name="chk27">27</td>
+                        <td class="ct_2">
+                            <a href="#"><img src="images/album/album20.jpg" alt="여행"><span>여행</span>볼빨간사춘기</a>
+                        </td>
+                        <td class="ct_3"><a href="#">Red Diary Page.2</a></td>
+                        <td class="ct_4">181,838</td>
+                        <td class="ct_5"><input type="button" value=" "></td>
+                        <td class="ct_6"><input type="button" value=" "></td>
+                        <td class="ct_7"><input type="button" value=" "></td>
+                        <td class="ct_8"><input type="button" value=" "></td>
+                        <td class="ct_9"><input type="button" value=" "></td>
+                    </tr>
+                    <tr>
+                        <td class="ct_1"><input type="checkbox" class="chk1" name="chk28">28</td>
+                        <td class="ct_2">
+                            <a href="#"><img src="images/album/album21.jpg" alt="뚜두뚜두 (DDU-DU DDU-DU)"><span>뚜두뚜두 (DDU-DU DDU-DU)</span>BLACKPINK</a>
+                        </td>
+                        <td class="ct_3"><a href="#">SQUARE UP</a></td>
+                        <td class="ct_4">34,398</td>
+                        <td class="ct_5"><input type="button" value=" "></td>
+                        <td class="ct_6"><input type="button" value=" "></td>
+                        <td class="ct_7"><input type="button" value=" "></td>
+                        <td class="ct_8"><input type="button" value=" "></td>
+                        <td class="ct_9"><input type="button" value=" "></td>
+                    </tr>
+                    <tr>
+                        <td class="ct_1"><input type="checkbox" class="chk1" name="chk29">29</td>
+                        <td class="ct_2">
+                            <a href="#"><img src="images/album/album23.jpg" alt="장마 (Rainy Season)"><span>장마 (Rainy Season)</span>마마무(Mamamoo)</a>
+                        </td>
+                        <td class="ct_3"><a href="#">장마 (Rainy Season)</a></td>
+                        <td class="ct_4">54,400</td>
+                        <td class="ct_5"><input type="button" value=" "></td>
+                        <td class="ct_6"><input type="button" value=" "></td>
+                        <td class="ct_7"><input type="button" value=" "></td>
+                        <td class="ct_8"><input type="button" value=" "></td>
+                        <td class="ct_9"><input type="button" value=" "></td>
+                    </tr>
+                    <tr>
+                        <td class="ct_1"><input type="checkbox" class="chk1" name="chk30">30</td>
+                        <td class="ct_2">
+                            <a href="#"><img src="images/album/album24.jpg" alt="Dance The Night Away"><span>Dance The Night Away</span>TWICE (트와이스)</a>
+                        </td>
+                        <td class="ct_3"><a href="#">Summer Nights</a></td>
+                        <td class="ct_4">19,957</td>
+                        <td class="ct_5"><input type="button" value=" "></td>
+                        <td class="ct_6"><input type="button" value=" "></td>
+                        <td class="ct_7"><input type="button" value=" "></td>
+                        <td class="ct_8"><input type="button" value=" "></td>
+                        <td class="ct_9"><input type="button" value=" "></td>
+                    </tr>
+                    <tr>
+                        <td class="ct_1"><input type="checkbox" class="chk1" name="chk31">31</td>
+                        <td class="ct_2">
+                            <a href="#"><img src="images/album/album25.jpg" alt="너나 해 (Egotistic)"><span>너나 해 (Egotistic)</span>마마무(Mamamoo)</a>
+                        </td>
+                        <td class="ct_3"><a href="#">RED MOON</a></td>
+                        <td class="ct_4">82,045</td>
+                        <td class="ct_5"><input type="button" value=" "></td>
+                        <td class="ct_6"><input type="button" value=" "></td>
+                        <td class="ct_7"><input type="button" value=" "></td>
+                        <td class="ct_8"><input type="button" value=" "></td>
+                        <td class="ct_9"><input type="button" value=" "></td>
+                    </tr>
+                    <tr>
+                        <td class="ct_1"><input type="checkbox" class="chk1" name="chk32">32</td>
+                        <td class="ct_2">
+                            <a href="#"><img src="images/album/album19.jpg" alt="탓 (Prod. BOYCOLD)"><span>탓 (Prod. BOYCOLD)</span>빈첸 (VINXEN)</a>
+                        </td>
+                        <td class="ct_3"><a href="#">고등래퍼2 Semi Final</a></td>
+                        <td class="ct_4">6,063</td>
+                        <td class="ct_5"><input type="button" value=" "></td>
+                        <td class="ct_6"><input type="button" value=" "></td>
+                        <td class="ct_7"><input type="button" value=" "></td>
+                        <td class="ct_8"><input type="button" value=" "></td>
+                        <td class="ct_9"><input type="button" value=" "></td>
+                    </tr>
+                    <tr>
+                        <td class="ct_1"><input type="checkbox" class="chk1" name="chk33">33</td>
+                        <td class="ct_2">
+                            <a href="#"><img src="images/album/album19.jpg" alt="북 (Prod. SLO)"><span>북 (Prod. SLO)</span>WEBSTER B, 오담률 (CHIN CHILLA)</a>
+                        </td>
+                        <td class="ct_3"><a href="#">고등래퍼2 팀대항전 Part.1</a></td>
+                        <td class="ct_4">5,483</td>
+                        <td class="ct_5"><input type="button" value=" "></td>
+                        <td class="ct_6"><input type="button" value=" "></td>
+                        <td class="ct_7"><input type="button" value=" "></td>
+                        <td class="ct_8"><input type="button" value=" "></td>
+                        <td class="ct_9"><input type="button" value=" "></td>
+                    </tr>
+                    <tr>
+                        <td class="ct_1"><input type="checkbox" class="chk1" name="chk34">34</td>
+                        <td class="ct_2">
+                            <a href="#"><img src="images/album/album03.jpg" alt="Perfect"><span>Perfect</span>Ed Sheeran</a>
+                        </td>
+                        <td class="ct_3"><a href="#">÷ (Deluxe)</a></td>
+                        <td class="ct_4">31,732</td>
+                        <td class="ct_5"><input type="button" value=" "></td>
+                        <td class="ct_6"><input type="button" value=" "></td>
+                        <td class="ct_7"><input type="button" value=" "></td>
+                        <td class="ct_8"><input type="button" value=" "></td>
+                        <td class="ct_9"><input type="button" value=" "></td>
+                    </tr>
+                    <tr>
+                        <td class="ct_1"><input type="checkbox" class="chk1" name="chk35">35</td>
+                        <td class="ct_2">
+                            <a href="#"><img src="images/album/album16.jpg" alt="별 바람 꽃 태양"><span>별 바람 꽃 태양</span>마마무(Mamamoo)</a>
+                        </td>
+                        <td class="ct_3"><a href="#">Yellow Flower</a></td>
+                        <td class="ct_4">22,197</td>
+                        <td class="ct_5"><input type="button" value=" "></td>
+                        <td class="ct_6"><input type="button" value=" "></td>
+                        <td class="ct_7"><input type="button" value=" "></td>
+                        <td class="ct_8"><input type="button" value=" "></td>
+                        <td class="ct_9"><input type="button" value=" "></td>
+                    </tr>
+                    <tr>
+                        <td class="ct_1"><input type="checkbox" class="chk1" name="chk36">36</td>
+                        <td class="ct_2">
+                            <a href="#"><img src="images/album/album31.jpg" alt="HandClap"><span>HandClap</span>Fitz &amp; The Tantrums</a>
+                        </td>
+                        <td class="ct_3"><a href="#">Fitz and The Tantrums (Deluxe)</a></td>
+                        <td class="ct_4">149,618</td>
+                        <td class="ct_5"><input type="button" value=" "></td>
+                        <td class="ct_6"><input type="button" value=" "></td>
+                        <td class="ct_7"><input type="button" value=" "></td>
+                        <td class="ct_8"><input type="button" value=" "></td>
+                        <td class="ct_9"><input type="button" value=" "></td>
+                    </tr>
+                    <tr>
+                        <td class="ct_1"><input type="checkbox" class="chk1" name="chk37">37</td>
+                        <td class="ct_2">
+                            <a href="#"><img src="images/album/album32.jpg" alt="마지막처럼"><span>마지막처럼</span>BLACKPINK</a>
+                        </td>
+                        <td class="ct_3"><a href="#">마지막처럼</a></td>
+                        <td class="ct_4">169,504</td>
+                        <td class="ct_5"><input type="button" value=" "></td>
+                        <td class="ct_6"><input type="button" value=" "></td>
+                        <td class="ct_7"><input type="button" value=" "></td>
+                        <td class="ct_8"><input type="button" value=" "></td>
+                        <td class="ct_9"><input type="button" value=" "></td>
+                    </tr>
+                    <tr>
+                        <td class="ct_1"><input type="checkbox" class="chk1" name="chk38">38</td>
+                        <td class="ct_2">
+                            <a href="#"><img src="images/album/album33.jpg" alt="널 너무 모르고"><span>널 너무 모르고</span>헤이즈 (Heize)</a>
+                        </td>
+                        <td class="ct_3"><a href="#">/// (너 먹구름 비)</a></td>
+                        <td class="ct_4">121,189</td>
+                        <td class="ct_5"><input type="button" value=" "></td>
+                        <td class="ct_6"><input type="button" value=" "></td>
+                        <td class="ct_7"><input type="button" value=" "></td>
+                        <td class="ct_8"><input type="button" value=" "></td>
+                        <td class="ct_9"><input type="button" value=" "></td>
+                    </tr>
+                    <tr>
+                        <td class="ct_1"><input type="checkbox" class="chk1" name="chk39">39</td>
+                        <td class="ct_2">
+                            <a href="#"><img src="images/album/album33.jpg" alt="먹구름 (Feat. nafla)"><span>먹구름 (Feat. nafla)</span>헤이즈 (Heize)</a>
+                        </td>
+                        <td class="ct_3"><a href="#">/// (너 먹구름 비)</a></td>
+                        <td class="ct_4">30,503</td>
+                        <td class="ct_5"><input type="button" value=" "></td>
+                        <td class="ct_6"><input type="button" value=" "></td>
+                        <td class="ct_7"><input type="button" value=" "></td>
+                        <td class="ct_8"><input type="button" value=" "></td>
+                        <td class="ct_9"><input type="button" value=" "></td>
+                    </tr>
+                    <tr>
+                        <td class="ct_1"><input type="checkbox" class="chk1" name="chk40">40</td>
+                        <td class="ct_2">
+                            <a href="#"><img src="images/album/album33.jpg" alt="비도 오고 그래서 (Feat. 신용재)"><span>비도 오고 그래서 (Feat. 신용재)</span>헤이즈 (Heize)</a>
+                        </td>
+                        <td class="ct_3"><a href="#">/// (너 먹구름 비)</a></td>
+                        <td class="ct_4">213,026</td>
+                       <td class="ct_5"><input type="button" value=" "></td>
+                        <td class="ct_6"><input type="button" value=" "></td>
+                        <td class="ct_7"><input type="button" value=" "></td>
+                        <td class="ct_8"><input type="button" value=" "></td>
+                        <td class="ct_9"><input type="button" value=" "></td>
+                    </tr>
+                    <tr>
+                        <td class="ct_1"><input type="checkbox" class="chk1" name="chk41">41</td>
+                        <td class="ct_2">
+                            <a href="#"><img src="images/album/album34.jpg" alt="동화"><span>동화</span>멜로망스</a>
+                        </td>
+                        <td class="ct_3"><a href="#">The Fairy Tale</a></td>
+                        <td class="ct_4">52,814</td>
+                        <td class="ct_5"><input type="button" value=" "></td>
+                        <td class="ct_6"><input type="button" value=" "></td>
+                        <td class="ct_7"><input type="button" value=" "></td>
+                        <td class="ct_8"><input type="button" value=" "></td>
+                        <td class="ct_9"><input type="button" value=" "></td>
+                    </tr>
+                    <tr>
+                        <td class="ct_1"><input type="checkbox" class="chk1" name="chk42">42</td>
+                        <td class="ct_2">
+                            <a href="#"><img src="images/album/album34.jpg" alt="바람"><span>바람</span>멜로망스</a>
+                        </td>
+                        <td class="ct_3"><a href="#">The Fairy Tale</a></td>
+                        <td class="ct_4">52,814</td>
+                        <td class="ct_5"><input type="button" value=" "></td>
+                        <td class="ct_6"><input type="button" value=" "></td>
+                        <td class="ct_7"><input type="button" value=" "></td>
+                        <td class="ct_8"><input type="button" value=" "></td>
+                        <td class="ct_9"><input type="button" value=" "></td>
+                    </tr>
+                    <tr>
+                        <td class="ct_1"><input type="checkbox" class="chk1" name="chk43">43</td>
+                        <td class="ct_2">
+                            <a href="#"><img src="images/album/album34.jpg" alt="아름다운 순간"><span>아름다운 순간</span>멜로망스</a>
+                        </td>
+                        <td class="ct_3"><a href="#">The Fairy Tale</a></td>
+                        <td class="ct_4">52,814</td>
+                        <td class="ct_5"><input type="button" value=" "></td>
+                        <td class="ct_6"><input type="button" value=" "></td>
+                        <td class="ct_7"><input type="button" value=" "></td>
+                        <td class="ct_8"><input type="button" value=" "></td>
+                        <td class="ct_9"><input type="button" value=" "></td>
+                    </tr>
+                    <tr>
+                        <td class="ct_1"><input type="checkbox" class="chk1" name="chk44">44</td>
+                        <td class="ct_2">
+                            <a href="#"><img src="images/album/album35.jpg" alt="매트리스"><span>매트리스</span>10cm</a>
+                        </td>
+                        <td class="ct_3"><a href="#">4.1</a></td>
+                        <td class="ct_4">6,374</td>
+                        <td class="ct_5"><input type="button" value=" "></td>
+                        <td class="ct_6"><input type="button" value=" "></td>
+                        <td class="ct_7"><input type="button" value=" "></td>
+                        <td class="ct_8"><input type="button" value=" "></td>
+                        <td class="ct_9"><input type="button" value=" "></td>
+                    </tr>
+                    <tr>
+                        <td class="ct_1"><input type="checkbox" class="chk1" name="chk45">45</td>
+                        <td class="ct_2">
+                            <a href="#"><img src="images/album/album36.jpg" alt="And July (Feat. DEAN, DJ Friz)"><span>And July (Feat. DEAN, DJ Friz)</span>헤이즈 (Heize)</a>
+                        </td>
+                        <td class="ct_3"><a href="#">And July</a></td>
+                        <td class="ct_4">104,964</td>
+                        <td class="ct_5"><input type="button" value=" "></td>
+                        <td class="ct_6"><input type="button" value=" "></td>
+                        <td class="ct_7"><input type="button" value=" "></td>
+                        <td class="ct_8"><input type="button" value=" "></td>
+                        <td class="ct_9"><input type="button" value=" "></td>
+                    </tr>
+                    <tr>
+                        <td class="ct_1"><input type="checkbox" class="chk1" name="chk46">46</td>
+                        <td class="ct_2">
+                            <a href="#"><img src="images/album/album36.jpg" alt="Underwater"><span>Underwater</span>헤이즈 (Heize)</a>
+                        </td>
+                        <td class="ct_3"><a href="#">And July</a></td>
+                        <td class="ct_4">38,684</td>
+                       <td class="ct_5"><input type="button" value=" "></td>
+                        <td class="ct_6"><input type="button" value=" "></td>
+                        <td class="ct_7"><input type="button" value=" "></td>
+                        <td class="ct_8"><input type="button" value=" "></td>
+                        <td class="ct_9"><input type="button" value=" "></td>
+                    </tr>
+                    <tr>
+                        <td class="ct_1"><input type="checkbox" class="chk1" name="chk47">47</td>
+                        <td class="ct_2">
+                            <a href="#"><img src="images/album/album36.jpg" alt="Shut Up & Groove (Feat. DEAN)"><span>Shut Up &amp; Groove (Feat. DEAN)</span>헤이즈 (Heize)</a>
+                        </td>
+                        <td class="ct_3"><a href="#">And July</a></td>
+                        <td class="ct_4">46,332</td>
+                        <td class="ct_5"><input type="button" value=" "></td>
+                        <td class="ct_6"><input type="button" value=" "></td>
+                        <td class="ct_7"><input type="button" value=" "></td>
+                        <td class="ct_8"><input type="button" value=" "></td>
+                        <td class="ct_9"><input type="button" value=" "></td>
+                    </tr>
+                    <tr>
+                        <td class="ct_1"><input type="checkbox" class="chk1" name="chk48">48</td>
+                        <td class="ct_2">
+                            <a href="#"><img src="images/album/album36.jpg" alt="돌아오지마 (Acoustic Ver.)"><span>돌아오지마 (Acoustic Ver.)</span>헤이즈 (Heize)</a>
+                        </td>
+                        <td class="ct_3"><a href="#">And July</a></td>
+                        <td class="ct_4">11,531</td>
+                        <td class="ct_5"><input type="button" value=" "></td>
+                        <td class="ct_6"><input type="button" value=" "></td>
+                        <td class="ct_7"><input type="button" value=" "></td>
+                        <td class="ct_8"><input type="button" value=" "></td>
+                        <td class="ct_9"><input type="button" value=" "></td>
+                    </tr>
+                    <tr>
+                        <td class="ct_1"><input type="checkbox" class="chk1" name="chk49">49</td>
+                        <td class="ct_2">
+                            <a href="#"><img src="images/album/album37.jpg" alt="Jenga (Feat. Gaeko)"><span>Jenga (Feat. Gaeko)</span>Red Velvet(레드벨벳)</a>
+                        </td>
+                        <td class="ct_3"><a href="#">바람</a></td>
+                        <td class="ct_4">86,860</td>
+                       <td class="ct_5"><input type="button" value=" "></td>
+                        <td class="ct_6"><input type="button" value=" "></td>
+                        <td class="ct_7"><input type="button" value=" "></td>
+                        <td class="ct_8"><input type="button" value=" "></td>
+                        <td class="ct_9"><input type="button" value=" "></td>
+                    </tr>
+                    <tr>
+                        <td class="ct_1"><input type="checkbox" class="chk1" name="chk50">50</td>
+                        <td class="ct_2">
+                            <a href="#"><img src="images/album/album37.jpg" alt="내가 더 나빠"><span>내가 더 나빠</span>헤이즈 (Heize)</a>
+                        </td>
+                        <td class="ct_3"><a href="#">바람</a></td>
+                        <td class="ct_4">49,449</td>
+                        <td class="ct_5"><input type="button" value=" "></td>
+                        <td class="ct_6"><input type="button" value=" "></td>
+                        <td class="ct_7"><input type="button" value=" "></td>
+                        <td class="ct_8"><input type="button" value=" "></td>
+                        <td class="ct_9"><input type="button" value=" "></td>
+                    </tr>
+                </table>
+            </div><!--chart-->
+        </div><!--chart_wrap-->
+            <div id="banner01">
+                <p class="banner"><img src="images/banner02.jpg" alt="광고배너"></p>
+                <p class="banner"><img src="images/banner03.jpg" alt="광고배너"></p>
+                <p class="banner"><img src="images/banner04.jpg" alt="광고배너"></p>
+            </div>
+        <footer id="bottom">
+            <nav id="btm">
+                <ul>
+                    <li>회사소개 |</li>
+                    <li>이용약관 |</li>
+                    <li>개인정보처리방침 |</li>
+                    <li>청소년보호정책 |</li>
+                    <li>제휴/프로모션문의 |</li>
+                    <li>이메일주소무단수집거부 |</li>
+                    <li>파트너센터 |</li>
+                    <li>사업자정보확인</li>
+                </ul>
+            </nav><!--btm-->
+            <address>(주) 카카오M | 서울시 강남구 테혜란로 103길 17 | 대표이사 : 석일우 | 사업자등록번호 : 000-00-00000 | 통신판매업 신고번호 : 제0000-서울강남-00000호<br>문의전화(평일 09:00~18:00): 0000-0000 (유료) | 이메일 : ilwoo_seok@naver.com | 호스팅 제공자 : (주) 카카오M &copy;Kakao M Corp. All rights reserved.</address>
+        </footer><!--bottom-->
+        <div id="bt_img">
+            <img src="images/bottom/bottom1.png" alt="대상"><img src="images/bottom/bottom2.png" alt="1위"><img src="images/bottom/bottom3.png" alt="대상"><img src="images/bottom/bottom4.png" alt="저작권"><img src="images/bottom/bottom5.png" alt="저작권"><img src="images/bottom/bottom6.png" alt="인증"><img src="images/bottom/bottom7.jpg" alt="이미지"><img src="images/bottom/bottom8.jpg" alt="이미지">
+        </div><!--spon-->
+    </div><!--wrap-->
+</body>
+</html>

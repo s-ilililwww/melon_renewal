@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css?family=Nanum+Brush+Script');
+/*reset*/
+a{text-decoration: none; color: inherit;}
+html, body{width: 100%; height: 100%; font-family: 'Nanum Gothic', sans-serif;}
+/*wrap*/
+#wrap{width: 100%; height: 100%; box-sizing: border-box;}
+
+#top_wrap{width: 100%; height: 100%;}
+#mySwipe{width: 100%; height: 100%; overflow: hidden;}
+.swipe-wrap{width: 400%; height: 100%;}
+.swipe-wrap li{width: 100%; height: 100%; float: left; position: relative;}
+.img2{width: 100%; height: 100%;}
+.txt{position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%)}
+
+
+#left{width: 200px; height: 100%; background-color: rgba(0,0,0,0.5); position: fixed; top: 0;}
+#left_menu{width: 160px; height: 200px; margin: 200px auto;}
+#left_menu ul li{font-size: 20px; font-weight: bold; height: 50px; line-height: 50px; text-align: right; color: #eaeaea;}
+#left_menu ul li a:hover{color: #1fe13d; background: url(../images/button06.png) no-repeat left center; padding-left: 20px;}
+
+#right{width: 100%; height: 100%; margin: 0 auto; position: absolute; top: 0; left: 50%; transform: translateX(-50%);}
+#top_menu{width: 70%; margin: 0 auto; height: 25px; border-bottom: 1px solid #000; border-color: rgba(250,250,250,0.3); line-height: 25px;}
+#top_menu ul li{float: left; margin-right: 20px; font-size: 0.6vw; color: #eaeaea;}
+#top_menu ul li a:hover{color: #1fe13d;}
+#top_menu ul li:last-child{float: right; margin: 0;}
+
+.next{float: left; width: 20px; height: 50px; overflow: hidden; position: relative; top: 50%; margin-left: 210px;}
+.next input{position: absolute; width: 80px; outline: none;}
+
+.back{float: right; width: 20px; height: 50px; overflow: hidden; position: relative; top: 50%; margin-right: 210px;}
+.back input{position: absolute; width: 80px; right: -10px; outline: none;}
+
+#main_wrap1{background: #EAE7E3  url("../images/Hi-Fi/main_img2.png") no-repeat  600px center;
+background-size: 90%; width: 100%; height: 100%;}
+
+#main_wrap2{background: #fcfcfc url("../images/Hi-Fi/album5.jpg") no-repeat  600px -140px; background-size: 90%; width: 100%; height: 100%;}
+
+.main_wrap h2{font-size: 2vw; line-height: 180%; padding-top: 10px; color: #333; font-family: 'Nanum Brush Script', cursive; width: 800px;}
+.main_wrap h2 span{display: block; font-size: 5vw;}
+.main_wrap{padding-left: 300px; box-sizing: border-box;}
+
+.album{ margin-top: 50px;}
+.album ul li{width: 14%; float: left; margin-right: 100px;}
+.album ul li img{width: 100%;}
+.album ul li p{width: 70%; font-size: 0.8vw; height: 47px; line-height: 25px; font-weight: bold; float: left;}
+.album ul li p a span{display: block; font-size: 0.6vw;}
+
+.album ul li p.btn1{width: 30%; height: 10%;}
+.play{width: 100%; float: right;}
+.album ul li p.btn2{width: 30%; height: 0%; margin-top: 5px;}
+.down{width: 100%; float: right;}
+
+.album2{clear: both; padding-top: 30px;}

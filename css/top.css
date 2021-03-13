@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+/*reset*/
+a{text-decoration: none; color: inherit;}
+body{font-family: 'Nanum Gothic', sans-serif; color: #333;}
+
+
+/*top*/
+#wrap{width: 100%; overflow: hidden;}
+#line1{width: 100%; height: 25px; border-bottom: 2px solid #02cb36; position: absolute;}
+#top{width: 1200px; height: 204px; margin: 0 auto; position: relative;}
+#t_txt{width: 1200px; height: 25px; line-height: 22px;}
+#t_txt p a{font-size: 11px; color: #333;}
+#l_txt{width: 972px; height: 25px; float: left;}
+#l_txt p{float: left; margin-right: 30px;}
+#r_txt{width: 228px; height: 25px; float: left;}
+#r_txt p{float: left; margin-left: 30px;}
+
+/*left_top*/
+#left_top{width: 600px; height: 150px; float: left;}
+#left_top h1{float: left;}
+#left_top p{float: left; border-bottom: 2px solid #02cb36; margin-left: 20px; width: 350px;}
+#left_top p #u_search{outline:  none; border: none; width: 300px; height: 40px; margin: 45px 0 0;}
+#left_top p #img_search{margin: 50px 0 0 10px; outline: none;}
+#left_top ul{clear: both;}
+#left_top ul li{float: left; width: 110px; height: 38px; line-height: 38px; font-size: 16px; font-weight: bold; margin: 39px 0 0; text-align: center;}
+#left_top ul li:first-child{margin-left: 0;}
+#left_top ul li:hover{border-bottom: 1px solid #02cb36;}
+#left_top ul li a:hover{color: #02cb36;}
+
+
+/*right_top*/
+#right_top{float: right; width: 600px; height: 150px;}
+#right_top p.top_evt{width: 280px; height: 75px; margin-top: 45px; float: left;}
+#log{width: 300px; height: 130px; float: right; margin: 20px 0 0 20px;}
+#log p.kakao{padding-bottom: 5px;}
+#log p.kakao a{color: #503937; font-size: 12px;}
+#log p.kakao img{width: 10px; height: 10px; margin-right: 5px;}
+
+.log_in{width: 201px; height: 56px; float: left; background-color: #f0f;}
+#log_id, #log_ps{outline:  none; text-indent: 0.3em; width: 200px; height: 30px; vertical-align: top; border: 1px solid #ccc;}
+#log_id{border-bottom: none;}
+#login{outline: none; width: 70px; height: 67px; float: left; background-color: #f9f9f9; border: 1px solid #ccc; cursor: pointer;}
+.log_txt{font-size: 11px;}
+div p.ck{float: left; margin-top: 5px;}
+.log1, .log2{padding-top: 2px; margin-top: 5px;}
+.log1{float: left; margin-left: 22px;}
+.log2{float: left; margin-left: 15px;}
+
+#line2{border-bottom: 1px solid #eaeaea;}

@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+@import url("../css/top.css");
+@import url("../css/bottom.css");
+
+#left_top ul li:nth-child(2){color: #00cd3c;}
+
+#left_top ul li{position: relative;}
+#left_top ul li:nth-child(2){border-bottom: 1px solid #02cb36;}
+#left_top ul li .sub{width: 600px; height: 40px; z-index: 10; position: absolute;}
+#left_top ul li .sub li{border-bottom: none; margin: 0; font-size: 12px; text-align: center; float: left; width: 80px; height: 40px; line-height: 40px;}
+#left_top ul li .sub li a{color: #666;}
+#left_top ul li .sub li:hover{border-bottom: none;}
+#left_top ul li .sub li a:hover{color: #00cd3c;}
+
+#line3{width: 100%; height: 40px; background-color: #fcfcfc; border-bottom: 1px solid #eaeaea;}
+
+/*main_wrap*/
+#main_wrap{width: 1200px; margin: 0 auto; background-color: #fff;}
+#now{width: 1200px; margin: 0 auto;}
+#now h2{font-size: 23px; float: left; margin: 47px 20px 0 0; color: #333; text-indent: 1em;}
+#now p{font-size: 12px; padding-top: 58px; padding-bottom: 10px; border-bottom: 2px solid #00cd3b; color: #666;}
+
+#main{width: 1200px; margin: 0 auto;}
+#today{width: 1200px; height: 480px; background-color: #e4ceff;}
+.today_txt{text-indent: 1em; padding-top: 30px; font-size: 18px; font-weight: bold; color: #333; padding-bottom: 20px;}
+.post{float: left; width: 300px; text-align: center;}
+.post img{border-radius: 5px; cursor: pointer;}
+.post1{margin-left: 150px;}
+
+#star_post{width: 1200px; margin-top: 10px;}
+#star_post h3{font-size: 18px; text-indent: 1em; border-bottom: 2px solid #00cd3b; padding-bottom: 10px;}
+
+.post_box{width: 1000px; height: 70px; padding: 10px; margin: 0 auto; border-bottom: 1px solid #eaeaea; vertical-align: middle;}
+.post_img{width: 120px; height: 70px; float: left; text-align: center; cursor: pointer;}
+.post_img span{font-size: 12px; font-weight: bold; color: #333; display: block;}
+.post_img img{width: 35px; height: 35px; border-radius: 100px; margin-top: 10px;}
+
+.post_txt_img{width: 110px; height: 70px; float: left; margin-left: 30px; cursor: pointer;}
+.post_txt_img img{width: 90px; height: 70px;}
+
+.post_txt{float: left; width: 740px; height: 50px; padding-top: 15px; text-align: justify; line-height: 21px; font-size: 15px; color: #000; cursor: pointer;}
+
+.post_txt1{padding-top: 0; line-height: 70px;}
